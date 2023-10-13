@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
+import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import footerBottom from "./footerbottom";
 
 const meta = {
@@ -7,6 +7,14 @@ const meta = {
   component: footerBottom,
   parameters: {
     layout: "centered",
+    backgrounds: {
+      default: 'light',
+      viewport: {
+        viewports: INITIAL_VIEWPORTS,
+        defaultViewport: 'iphone6',
+        defaultOrientation: "landscape"
+      },  
+    },
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof footerBottom>;

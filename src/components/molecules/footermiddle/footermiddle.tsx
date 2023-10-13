@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Linkedin } from "@/components/atoms/icon/linkedin/linkedin";
 import { Sitecore } from "@/components/atoms/logo/sitecore/sitecore";
 import { Leadinfo } from "@/components/atoms/logo/leadinfo/leadinfo";
+import { FaAngleDown } from "react-icons/fa6";
 import Link from "next/link";
 
 const FooterMiddle: any = () => {
@@ -14,21 +15,24 @@ const FooterMiddle: any = () => {
     <div>
       <div className="flex flex-wrap justify-center mx-auto max-w-[1210px]">
         {/* mobile */}
-
-        <div className="xs:block sm:block md:hidden lg:hidden">
-          <div className="w-full text-center px-[17px] pt-[65px]">
+        <div className="hidden xs:block sm:block">
+          <div className="w-full text-center px-[17px] pt-[65px] flex justify-center">
             <h4
-              className="text-[20px] font-allroundgothic"
+              className="text-[20px] font-allroundgothic flex items-center"
               onClick={() => setContent1Up(!content1Up)}
             >
               Uxbee{" "}
-              <i
-                className={`fa-solid fa-angle-down transition-all transform ${
-                  content1Up ? "rotate-180" : ""
-                }`}
-              ></i>
+              <span
+                className={`hidden xs:block ${
+                  content1Up ? "xs:-rotate-180" : "xs:rotate-0"
+                } xs:transition xs:ease xs:delay-350`}
+              >
+                <FaAngleDown />
+              </span>
             </h4>
-            <Transition
+          </div>
+          <div className="px-[17px] text-center">
+          <Transition
               className="text-[13px]"
               show={content1Up}
               enter="transition-opacity duration-500"
@@ -44,19 +48,24 @@ const FooterMiddle: any = () => {
               positive reviews, and repeat purchases. This is how win-win works.
             </Transition>
           </div>
-          <div className="w-full my-[17px] text-center">
+
+          <div className="w-full my-[17px] text-center flex justify-center">
             <h4
-              className="text-[20px] font-allroundgothic"
+              className="text-[20px] font-allroundgothic flex items-center"
               onClick={() => setContent2Up(!content2Up)}
             >
               Solutions{" "}
-              <i
-                className={`fa-solid fa-angle-down transition-all transform ${
-                  content2Up ? "rotate-180" : ""
-                }`}
-              ></i>
+              <span
+                className={`hidden xs:block ${
+                  content2Up ? "xs:-rotate-180" : "xs:rotate-0"
+                } xs:transition xs:ease xs:delay-350`}
+              >
+                <FaAngleDown />
+              </span>
             </h4>
-            <Transition
+          </div>
+          <div className="px-[17px] text-center">
+          <Transition
               className="text-[13px]"
               show={content2Up}
               enter="transition-opacity duration-500"
@@ -75,19 +84,23 @@ const FooterMiddle: any = () => {
               </ul>
             </Transition>
           </div>
-          <div className="w-full my-[17px] text-center">
+          <div className="w-full my-[17px] text-center flex justify-center">
             <h4
-              className="text-[20px] font-allroundgothic"
+              className="text-[20px] font-allroundgothic flex items-center"
               onClick={() => setContent3Up(!content3Up)}
             >
               About Us{" "}
-              <i
-                className={`fa-solid fa-angle-down transition-all transform ${
-                  content3Up ? "rotate-180" : ""
-                }`}
-              ></i>
+              <span
+                className={`hidden xs:block ${
+                  content3Up ? "xs:-rotate-180" : "xs:rotate-0"
+                } xs:transition xs:ease xs:delay-350`}
+              >
+                <FaAngleDown />
+              </span>
             </h4>
-            <Transition
+          </div>
+          <div className="px-[17px] text-center">
+          <Transition
               className="text-[13px]"
               show={content3Up}
               enter="transition-opacity duration-500"
@@ -124,38 +137,37 @@ const FooterMiddle: any = () => {
             </a>
           </div>
 
-          <div className="px-[17px] pb-[20px] pt-[15px] xs:block sm:block md:hidden lg:hidden">
-            <img
-              src="https://uxbee.eu/-/media/project/uxbee/uxbee/logos/logo-sitecore-gold-implementation-partner.png?la=nl-nl&amp;hash=F4644345E74A70637FA270662B97C8FC"
-              alt="sitecore"
-              className="float-left h-[82px] w-auto"
-            />
-            <img
-              src="https://uxbee.eu/-/media/project/uxbee/uxbee-new/partners-uxbee/partner-badge-leadinfo.png?la=nl-nl&h=69&w=150&hash=C96776083E42C596A0FD01A4E7DBE43A"
-              alt="lead_info"
-              className="h-[69px] w-auto float-right ml-[25px]"
-            />
+          <div className="w-full mt-[10px]">
+            <div className="grid grid-cols-2">
+                <div className="flex justify-center">
+                  <Sitecore />
+                </div>
+                <div className="flex justify-center">
+                  <Leadinfo />
+                </div>
+            </div>
           </div>
         </div>
 
         {/* desktop */}
-        <div className="justify-center mx-auto w-full pt-[65px] pb-[20px] xs:hidden sm:hidden md:block lg:block font-gilroy">
-          <div className="md:flex md:flex-row lg:flex lg:flex-row">
-            <div className="w-full max-w-[315px]">
-              <h4 className="text-[20px] mb-[23px] font-semibold font-allroundgothic">
-                Uxbee
-              </h4>
-              <p className="text-[13px] leading-[30px]">
-                The road of uxbee leads through magic in e-commerce and
-                marketing technology, always to happy customers. Along the way,
-                you benefit from qualified leads, more sales, higher customer
-                satisfaction, positive reviews, and repeat purchases. This is
-                how win-win works.
-              </p>
-            </div>
-            <div className="w-full">
-              <div className="ml-[95px]">
+        <div className="flex flex-wrap justify-center w-full mx-auto max-w-[1210px] sm:max-w-[80%] md:max-w-[80%] font-gilroy">
+          <div className="w-full pt-[65px] pb-[20px]">
+            <div className="grid md:grid-cols-3 grid-cols-[315px_350px_300px_200px] mx-auto xs:hidden sm:hidden">
+              <div className="md:grid-cols-1 md:col-span-3 md:mb-[25px]">
                 <h4 className="text-[20px] mb-[23px] font-semibold font-allroundgothic">
+                  Uxbee
+                </h4>
+                <p className="text-[13px] leading-[30px]">
+                  The road of uxbee leads through magic in e-commerce and
+                  marketing technology, always to happy customers. Along the way,
+                  you benefit from qualified leads, more sales, higher customer
+                  satisfaction, positive reviews, and repeat purchases. This is
+                  how win-win works.
+                </p>
+              </div>
+
+              <div className="md:ml-[0px] ml-[95px]">
+              <h4 className="text-[20px] mb-[23px] font-semibold font-allroundgothic">
                   Solutions
                 </h4>
                 <div className="text-[13px] leading-[30px]">
@@ -199,10 +211,9 @@ const FooterMiddle: any = () => {
                   </Link>
                 </div>
               </div>
-            </div>
-            <div className="w-full">
-              <div className="ml-[95px]">
-                <h4 className="text-[20px] mb-[23px] font-semibold font-allroundgothic">
+
+              <div>
+              <h4 className="text-[20px] mb-[23px] font-semibold font-allroundgothic">
                   About us
                 </h4>
                 <div className="text-[13px] leading-[30px]">
@@ -230,10 +241,9 @@ const FooterMiddle: any = () => {
                   </Link>
                 </div>
               </div>
-            </div>
-            <div className="w-full">
-              <div className="ml-[80px]">
-                <h4 className="text-[20px] mb-[23px] font-semibold font-allroundgothic">
+
+              <div>
+              <h4 className="text-[20px] mb-[23px] font-semibold font-allroundgothic">
                   Contact
                 </h4>
                 <div className="text-[13px] leading-[30px]">
@@ -279,12 +289,14 @@ const FooterMiddle: any = () => {
                 </div>
               </div>
             </div>
+
+            <div className="flex flex-inline space-x-5 mt-[20px]">
+              <Sitecore />
+              <Leadinfo />
+            </div>  
+              
           </div>
-          <div className="flex flex-inline space-x-5 mt-[20px]">
-            <Sitecore />
-            <Leadinfo />
-          </div>
-        </div> 
+        </div>
 
       </div>
     </div>

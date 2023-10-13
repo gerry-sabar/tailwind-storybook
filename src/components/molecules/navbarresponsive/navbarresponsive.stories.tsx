@@ -13,7 +13,8 @@ const meta = {
         viewports: INITIAL_VIEWPORTS,
         defaultViewport: 'iphone6',
         defaultOrientation: "landscape"
-      },    },
+      },  
+    },
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof NavbarResponsive>;
