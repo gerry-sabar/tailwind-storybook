@@ -26,7 +26,7 @@ const Leftcontent: any = () => {
               />
             </span>
             <span className="ml-4 text-[23px]">
-              <a href="">Elektronicaweg 37, 2628 XG Delft</a>
+              <Link href="">Elektronicaweg 37, 2628 XG Delft</Link>
             </span>
           </div>
           <div className="flex items-center py-2 transition ease delay-350 hover:text-[#FFBC01]">
@@ -38,7 +38,7 @@ const Leftcontent: any = () => {
               />
             </span>
             <span className="ml-4 text-[23px]">
-              <a href="">00 31 (0) 15 - 79 00 100</a>
+              <Link href="">00 31 (0) 15 - 79 00 100</Link>
             </span>
           </div>
           <div className="flex items-center py-2 transition ease delay-350 hover:text-[#FFBC01]">
@@ -50,7 +50,7 @@ const Leftcontent: any = () => {
               />
             </span>
             <span className="ml-4 hover:text[#FFBC01] text-[23px]">
-              <a href="">hello@uxbee.nl</a>
+              <Link href="">hello@uxbee.nl</Link>
             </span>
           </div>
         </div>

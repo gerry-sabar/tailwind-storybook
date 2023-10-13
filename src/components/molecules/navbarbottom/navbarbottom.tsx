@@ -1,5 +1,5 @@
 "use client";
-import { NavbarResponsive } from "../navbarresponsive/navbarresponsive";
+import Link from "next/link";
 import { Uxbee } from "@/components/atoms/logo/uxbee/uxbee";
 import { FaCaretDown, FaCaretRight } from "react-icons/fa";
 
@@ -16,52 +16,52 @@ export const NavbarBottom = () => {
 
             <div className="block xs:hidden sm:hidden md:block lg:block xl:block">
               <span className="ml-[29px] font-semibold hover:text-[#FFBC01] hover:underline hover:decoration-solid transition ease delay-350">
-                <a href="">About us</a>
+                <Link href="">About us</Link>
               </span>
               <span className="ml-[29px] font-semibold inline-block group">
                 <span className="flex items-center hover:text-[#FFBC01] hover:underline hover:decoration-solid transition ease delay-350">
-                  <a href="">Solutions</a>
+                  <Link href="">Solutions</Link>
                   <span className="ml-1">
                     <FaCaretDown />
                   </span>
                 </span>
                 <span className="absolute bg-black p-[20px] max-w-[730px] min-w-[160px] w-[100%] hidden group-hover:block">
                   <div className="mt-[10px] text-[17px] text-[#FFBC01] hover:text-white transition ease delay-350">
-                    <a href="">Marketing technology</a>
+                    <Link href="">Marketing technology</Link>
                   </div>
                   <div className="mt-[10px] text-[15px]">
                     <span className="flex items-center hover:text-[#FFBC01] transition ease delay-350">
                       <span className="mr-1">
                         <FaCaretRight />
                       </span>
-                      <a href="">Content management</a>
+                      <Link href="">Content management</Link>
                     </span>
                     <span className="flex items-center hover:text-[#FFBC01] transition ease delay-350">
                       <span className="mr-1">
                         <FaCaretRight />
                       </span>
-                      <a href="">Marketing automation</a>
+                      <Link href="">Marketing automation</Link>
                     </span>
                     <span className="flex items-center hover:text-[#FFBC01] transition ease delay-350">
                       <span className="mr-1">
                         <FaCaretRight />
                       </span>
-                      <a href="">Personalization</a>
+                      <Link href="">Personalization</Link>
                     </span>
                   </div>
                   <div className="mt-[20px] text-[17px] text-[#FFBC01] hover:text-white">
-                    <a href="">E-commerce</a>
+                    <Link href="">E-commerce</Link>
                   </div>
                 </span>
               </span>
               <span className="ml-[29px] font-semibold hover:text-[#FFBC01] hover:underline hover:decoration-solid transition ease delay-350">
-                <a href="">Our way of working</a>
+                <Link href="">Our way of working</Link>
               </span>
               <span className="ml-[29px] font-semibold hover:text-[#FFBC01] hover:underline hover:decoration-solid transition ease delay-350">
-                <a href="">Implementation</a>
+                <Link href="">Implementation</Link>
               </span>
               <span className="ml-[29px] font-semibold hover:text-[#FFBC01] hover:underline hover:decoration-solid transition ease delay-350">
-                <a href="">Customer cases</a>
+                <Link href="">Customer cases</Link>
               </span>
             </div>
           </div>

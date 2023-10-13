@@ -1,5 +1,6 @@
 import React from "react";
 export type LogoType = "navbar" | "footer"
+import Link from "next/link";
 
 interface LogoProps {
     type: LogoType;
@@ -7,12 +8,12 @@ interface LogoProps {
 
 function LayoutNavbar(){
     return(
-<a href="#">
+<Link href="#">
     <img
         src="https://uxbee.eu/assets/images/header/logo.svg"
         alt="logo_uxbee"
     />
-</a>
+</Link>
 
 )}
 

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 export const NavbarTop = () => {
   return (
@@ -7,16 +8,16 @@ export const NavbarTop = () => {
         <div className="max-w-[1210px] w-[100%] mx-auto text-right">
           <div className="mr-[60px] py-[7px] inline-flex items-center">
             <span className="ml-[15px] transition ease delay-350 hover:text-white">
-              <a href="https://google.com">Insights</a>
+              <Link href="">Insights</Link>
             </span>
             <span className="ml-[15px] transition ease delay-350 hover:text-white">
-              <a href="https://google.com">Team</a>
+              <Link href="">Team</Link>
             </span>
             <span className="ml-[15px] transition ease delay-350 hover:text-white">
-              <a href="https://google.com">Working for uxbee</a>
+              <Link href="">Working for uxbee</Link>
             </span>
             <span className="ml-[15px] transition ease delay-350 hover:text-white">
-              <a href="https://google.com">Contact</a>
+              <Link href="https://google.com">Contact</Link>
             </span>
             <span className="group ml-[15px] inline-block">
               <span className="flex items-center">
@@ -33,15 +34,15 @@ export const NavbarTop = () => {
                   </svg>
                 </span>
                 <span className="ml-1">
-                  <a className="transition ease delay-350 group-hover:text-white cursor-pointer">
+                  <Link href="" className="transition ease delay-350 group-hover:text-white cursor-pointer">
                     English
-                  </a>
+                  </Link>
                   <span className="absolute text-left ml-[-35px] bg-[#FFBC01] shadow-[0px_10px_10px_0px_rgba(0,0,0,0.4)] hidden group-hover:block">
                     <div className="transition ease delay-350 hover:bg-black hover:text-white p-3">
-                      <a href="#">English</a>
+                      <Link href="#">English</Link>
                     </div>
                     <div className="transition ease delay-350 hover:bg-black hover:text-white p-3">
-                      <a href="#">Nederlands</a>
+                      <Link href="#">Nederlands</Link>
                     </div>
                   </span>
                 </span>

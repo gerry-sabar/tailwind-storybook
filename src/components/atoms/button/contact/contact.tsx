@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import Link from "next/link";
 
 export type ButtonType = "phone" | "email"
 
@@ -20,7 +21,7 @@ export const Contact = ({
         { type === 'phone' ? <FaPhoneAlt /> : '' }
         { type === 'email' ? <FaEnvelope /> : '' }
     </span>
-    <a href={link}>{label}</a>
+    <Link href={link}>{label}</Link>
 </div>
 
   )
