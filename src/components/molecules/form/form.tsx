@@ -39,7 +39,7 @@ const Form: any = () => {
 
   return (
     <>
-      <div className="xs:flex xs:mx-auto xs:w-full md:w-full lg:w-1/2 xl:w-1/2 p-2 xs:p-[20px]">
+      <div className="xs:flex xs:mx-auto xs:w-full md:w-full lg:w-1/2 xl:w-1/2 p-2 xs:p-[20px]  font-gilroy">
         <div className="bg-[#FFBC01] w-full h-full rounded-l-3xl rounded-tr-3xl">
           <div className="py-[60px] px-[55px] xs:py-[10px] xs:px-[20px] sm:py-[20px] sm:px-[20px]">
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -84,7 +84,7 @@ const Form: any = () => {
                   {...fields.message}
                 />
               </div>
-              <div className="space-x-2 max-w-[270px]">
+              <div className="space-x-2 max-w-[270px] xs:mb-[60px] sm:mb-[60px]">
                 <Checkbox
                   onClick={() => setCheckboxStatus(!checkboxStatus)}
                   description="I consent to the processing of my data. You can read more about how we
@@ -95,7 +95,7 @@ const Form: any = () => {
                   {...fields.checked}
                 />
               </div>
-              <div className="mt-[10px] flex justify-end text-[17px] font-semibold">
+              <div className="mt-[10px] flex xs:justify-start sm:justify-start justify-end text-[17px] font-semibold">
                 <Submit label="Submit" />
               </div>
             </form>

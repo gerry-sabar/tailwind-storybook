@@ -3,10 +3,10 @@ import { Contact } from "@/components/atoms/button/contact/contact";
 
 const FooterTop: any = () => {
   return (
-    <div id="footer-top font-gilroy">
+    <div id="footer-top">
       <div className="bg-gradient-to-b from-black from-50% to-white to-50%">
         <div className="flex mx-auto max-w-[1210px] xs:w-full sm:w-full xs:max-w-[90%] sm:max-w-[700px] md:max-w-[760px]">
-          <div className="w-full bg-[#FFBC01] rounded-l-3xl rounded-tr-3xl">
+          <div className="xs:mt-[70px] sm:mt-[70px] w-full bg-[#FFBC01] rounded-l-3xl rounded-tr-3xl">
             <div className="px-[50px] py-[50px] xs:py-[35px] xs:px-[15px]">
               <div className="grid grid-cols-2 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1">
 
@@ -15,7 +15,7 @@ const FooterTop: any = () => {
                     Uxbee creates a successful e-commerce & marketing platform
                     together with you.
                   </h4>
-                  <p className="mt-[25px] text-[17px] leading-[30px] font-semibold">
+                  <p className="mt-[25px] text-[17px] leading-[30px] font-semibold font-gilroy">
                     Let technology work in your favor from now on and bring
                     magic to your e-commerce & marketing activities.
                   </p>

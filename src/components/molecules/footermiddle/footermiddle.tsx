@@ -32,7 +32,7 @@ const FooterMiddle: any = () => {
             </h4>
           </div>
           <div className="px-[17px] text-center">
-          <Transition
+            <Transition
               className="text-[13px]"
               show={content1Up}
               enter="transition-opacity duration-500"
@@ -65,7 +65,7 @@ const FooterMiddle: any = () => {
             </h4>
           </div>
           <div className="px-[17px] text-center">
-          <Transition
+            <Transition
               className="text-[13px]"
               show={content2Up}
               enter="transition-opacity duration-500"
@@ -100,7 +100,7 @@ const FooterMiddle: any = () => {
             </h4>
           </div>
           <div className="px-[17px] text-center">
-          <Transition
+            <Transition
               className="text-[13px]"
               show={content3Up}
               enter="transition-opacity duration-500"
@@ -139,12 +139,12 @@ const FooterMiddle: any = () => {
 
           <div className="w-full mt-[10px]">
             <div className="grid grid-cols-2">
-                <div className="flex justify-center">
-                  <Sitecore />
-                </div>
-                <div className="flex justify-center">
-                  <Leadinfo />
-                </div>
+              <div className="flex justify-center">
+                <Sitecore />
+              </div>
+              <div className="flex justify-center">
+                <Leadinfo />
+              </div>
             </div>
           </div>
         </div>
@@ -159,15 +159,15 @@ const FooterMiddle: any = () => {
                 </h4>
                 <p className="text-[13px] leading-[30px]">
                   The road of uxbee leads through magic in e-commerce and
-                  marketing technology, always to happy customers. Along the way,
-                  you benefit from qualified leads, more sales, higher customer
-                  satisfaction, positive reviews, and repeat purchases. This is
-                  how win-win works.
+                  marketing technology, always to happy customers. Along the
+                  way, you benefit from qualified leads, more sales, higher
+                  customer satisfaction, positive reviews, and repeat purchases.
+                  This is how win-win works.
                 </p>
               </div>
 
               <div className="md:ml-[0px] ml-[95px]">
-              <h4 className="text-[20px] mb-[23px] font-semibold font-allroundgothic">
+                <h4 className="text-[20px] mb-[23px] font-semibold font-allroundgothic">
                   Solutions
                 </h4>
                 <div className="text-[13px] leading-[30px]">
@@ -213,7 +213,7 @@ const FooterMiddle: any = () => {
               </div>
 
               <div>
-              <h4 className="text-[20px] mb-[23px] font-semibold font-allroundgothic">
+                <h4 className="text-[20px] mb-[23px] font-semibold font-allroundgothic">
                   About us
                 </h4>
                 <div className="text-[13px] leading-[30px]">
@@ -243,7 +243,7 @@ const FooterMiddle: any = () => {
               </div>
 
               <div>
-              <h4 className="text-[20px] mb-[23px] font-semibold font-allroundgothic">
+                <h4 className="text-[20px] mb-[23px] font-semibold font-allroundgothic">
                   Contact
                 </h4>
                 <div className="text-[13px] leading-[30px]">
@@ -290,14 +290,12 @@ const FooterMiddle: any = () => {
               </div>
             </div>
 
-            <div className="flex flex-inline space-x-5 mt-[20px]">
+            <div className="flex flex-inline space-x-5 mt-[20px] xs:hidden sm:hidden">
               <Sitecore />
               <Leadinfo />
-            </div>  
-              
+            </div>
           </div>
         </div>
-
       </div>
     </div>
   );

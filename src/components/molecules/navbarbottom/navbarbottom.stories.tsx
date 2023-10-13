@@ -5,7 +5,7 @@ const meta = {
   title: "Molecules/NavbarBottom",
   component: NavbarBottom,
   parameters: {
-    layout: "centered",
+    // layout: "centered",
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof NavbarBottom>;
